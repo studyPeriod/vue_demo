@@ -9,3 +9,11 @@
     width: 800px;
     border: 1px dashed green;
 }
+
+.borderR{
+    border: 1px solid red;
+}
+
+.borderG{
+    border: 1px solid green;
+}

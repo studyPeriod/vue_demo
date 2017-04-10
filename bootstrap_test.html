@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrapTest</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<div class="row">
+    <div class="col-lg-4 col-md-4  col-xs-4 borderR text-center">
+        从堆叠到水平排列
+    </div>
+    <div class="col-lg-8 col-md-8 col-xs-8 borderG text-center">
+        没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？
+    </div>
+</div>
+
+<div class="row"  id="myTab" style="margin: 30px auto;">
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    })
+</script>
+</body>
+</html>
