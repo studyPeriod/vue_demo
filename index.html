@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue demo</title>
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+
+<div id="app" class="box">
+    {{message}}
+</div>
+
+<div class="box" id="app2">
+    <span v-bind:title="message">
+        鼠标悬停查看动态绑定信息
+    </span>
+</div>
+
+<div class="box" id="app_3">
+    <p v-if="seen">看见了</p>
+</div>
+
+<div id="app_4" class="box">
+    <p v-for="m in info">{{m.text}}</p>
+</div>
+
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="js/demo.js"></script>
+</body>
+</html>

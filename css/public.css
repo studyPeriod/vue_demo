@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    margin: 20px auto;
+    padding: 10px;
+    width: 800px;
+    border: 1px dashed green;
+}
