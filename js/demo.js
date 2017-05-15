@@ -33,4 +33,25 @@ let app4=new Vue({
             text:"好好的写代码。"
         }]
     }
-})
+});
+let app10=new Vue({
+    el:"#numb1",
+    data:{
+        number:1,
+        "ok":true,
+        "url":"http://www.baidu.com"
+    }
+});
+
+let11=new Vue({
+    el:'#kess',
+    data:{
+        url:'http://cn.bing.com'
+    },
+    methods:{
+        dosth:function () {
+            alert("aaaa");
+
+        }
+    }
+});
