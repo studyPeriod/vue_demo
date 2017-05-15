@@ -55,3 +55,27 @@ let11=new Vue({
         }
     }
 });
+
+let13=new Vue({
+    el:"#computed_1",
+    data:{
+        info:"jsliu is good boy! he will be rich!",
+        date1:new Date(),
+        date2:new Date()
+    },
+    computed:{
+        reverInfo:function () {
+            var str=this.info.split('').reverse().join('');
+            return str;
+        },
+        now1:function () {
+
+            return this.date1;
+        }
+    },
+    methods:{
+        now2:function () {
+            return this.date2;
+        }
+    }
+});
