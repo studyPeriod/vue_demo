@@ -34,6 +34,30 @@ let app4=new Vue({
         }]
     }
 });
+
+
+let app5=new Vue({
+    el:'#app_5',
+    data:{
+        info:"hello"
+    },
+    methods:{
+        test:function () {
+            console.log(this.info);
+        },
+        test2:function () {
+            console.log("button is on hover");
+        }
+    }
+});
+
+let app6=new Vue({
+    el:"#app_6",
+    data:{
+        info:"jsliu"
+    }
+});
+
 let app10=new Vue({
     el:"#numb1",
     data:{

@@ -25,6 +25,19 @@
     <p v-for="m in info">{{m.text}}</p>
 </div>
 
+<div class="box" id="app_5">
+   <button v-on:click="test">test</button>
+   <button v-on:click="test2">test2</button>
+</div>
+
+
+<div class="box" id="app_6">
+    <p>{{info}}</p>
+    <p><input type="text" v-model="info"></p>
+
+</div>
+
+
 <div class="box" id="numb1">
     <input type="text" v-model="number">
     {{number+1}}

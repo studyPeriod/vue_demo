@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<div id="componet_1" class="box">
+    <ol>
+        <todo-item v-for="item in list" v-bind:todo="item"></todo-item>
+    </ol>
+</div>
+
+<div class="box" id="com2">
+    <div v-bind:title="flag" v-on:click="outputSth">flag</div>
+    <p>
+        <input type="text" v-model="flag">
+    </p>
+    <p>{{flag}}</p>
+    <p><input type="text" v-model="number"></p>
+    <p>
+        {{1+number}}
+    </p>
+</div>
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="js/componet.js"></script>
+</body>
+</html>
