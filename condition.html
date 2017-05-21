@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/public.css">
+
+</head>
+<body>
+<div class="box" id="test1">
+  <div v-if="status==1">the status is if{{status}}</div>
+  <div v-else-if="status==2">the status else if is {{status}}</div>
+  <div v-else>the status else is {{status}}</div>
+</div>
+
+<div class="box" id="test2">
+    <template v-if="loginType=='username'">
+        <label>用户名</label>
+        <input type="text" placeholder="请输入用户名">
+    </template>
+    <template v-else-if="loginType=='email'">
+        <label for="#email">密码</label>
+        <input type="text"  placeholder="请输入密码">
+    </template>
+    <button @click="toggleType">切换</button>
+</div>
+
+
+<div class="box" id="test3">
+    <template v-if="loginType=='username'">
+        <label for="#uname">用户名2</label>
+        <input type="text" placeholder="请输入用户名" key="username-input">
+    </template>
+    <template v-else>
+        <label for="#uemale">邮箱2</label>
+        <input type="text" placeholder="请输入邮箱" key="email-input">
+    </template>
+    <div :style="{fontsize:23+'px' }">
+        <button @click="toggleType" :style="{background:'red',color:'#fff'}">切换</button>
+    </div>
+</div>
+
+<div id="test4" class="box">
+    <div v-for="(item ,index) in fruit">
+        {{area}}-{{index}}-{{item.name}}
+    </div>
+</div>
+
+<div class="box" id="test5">
+    <div v-for="(value,key,index) in objinfo">
+        {{index}}--{{key}}--{{value}}
+    </div>
+    <div v-for="n in 12">{{n}}</div>
+</div>
+
+
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="js/condition.js"></script>
+</body>
+</html>
